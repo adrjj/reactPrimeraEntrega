@@ -1,0 +1,13 @@
+.contSaludo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.contListContainer{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
