@@ -1,0 +1,101 @@
+.contCard{
+background-color: rgb(248, 245, 245);
+width: 280px;
+height: 450px;
+padding: 0.5rem;
+border-radius: 0.8rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+box-shadow: 1px 5px 5px rgb(83, 80, 80);
+
+
+
+}
+.contCard img{
+
+    width: 70%;
+}
+.contEncabezado{
+    text-align: center;
+}
+.contEncabezado h2{
+    color: rgb(199, 28, 99);}
+.contEncabezado p {
+   margin-top: -12px;
+    font-weight: 700;
+   
+
+}
+.cardDisponibleH3{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.cardImg{
+    width: 50%;
+}
+.botonUno{
+background-color: rgb(209, 13, 134);
+text-decoration: none;
+font-weight: 700;
+border-radius: 0.5rem;
+padding: 0.3rem;
+color: aliceblue;
+    
+}
+.contDatos{
+    text-align: center;
+}
+        .cardPrecioH3{
+            font-weight: 700;
+            color: rgb(199, 28, 99);
+            font-size: 2rem;
+        }
+ 
+
+.contCardDetealle{
+    background-color: rgb(248, 245, 245);
+    width: 380px;
+    height: 500px;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 5px 5px rgb(83, 80, 80);
+
+
+
+
+}        
+.contador{
+    display: flex;
+    gap: 1rem;
+   justify-content: center;
+
+}
+.contContador{
+  
+   
+}
+.botonMenos ,.botonMas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+    border: 2px solid rgb(245, 23, 208);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botonMenos:active{
+    font-size: 25px;
+   box-shadow: 0px 0px 20px black;
+}
+
+.botonMas:active{
+    font-size: 25px;
+   box-shadow: 0px 0px 20px rgb(255, 5, 255);
+}

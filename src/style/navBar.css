@@ -1,0 +1,25 @@
+.contTotalNav{
+display: flex;
+gap: 6rem;
+
+}
+.marca{
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(47, 47, 49);
+    font-size: 1.2rem;
+}
+
+.contCategorias{
+    text-decoration: none;
+ display: flex;
+ gap: 1rem;
+ 
+}
+
+.categoria{
+   font-weight: 700;
+color: rgb(74, 73, 82);
+    text-decoration: none;
+  
+}
