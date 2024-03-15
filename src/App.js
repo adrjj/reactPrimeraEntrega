@@ -6,8 +6,11 @@ import "./style/app.css"
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CollapsibleExample from "./componentes/NavBar";
 import ItemListContainer from "./componentes/ItemListContainer";
-
 import ItemDetalleContador from './componentes/ItemDetalleContador';
+import Cart from "./componentes/Cart";
+import { CartProvider } from './componentes/CartContex';
+
+
 
 
 
@@ -19,7 +22,11 @@ import ItemDetalleContador from './componentes/ItemDetalleContador';
 function App() {
 
     return (
+
+
         <BrowserRouter>
+        <CartProvider>
+       
             <div className="contGeneral">
                 <CollapsibleExample enlaceUno="Famosos" enlaceDos="Juegos" enlaceTres="Logos" enlaceCuatro="Personajes" marca="Lamparas PINLED"> </CollapsibleExample>
 
@@ -34,6 +41,7 @@ function App() {
                         <Route path='/categoria/:categoriaId' element={<ItemListContainer />} ></Route>
                         <Route path='/item/:itemId' element={<ItemDetalleContador />} ></Route>
                         <Route path='/categoria/:categoriaId/item/:itemId' element={<ItemDetalleContador />} ></Route>
+                        <Route path='/Cart'element ={<Cart/>}  ></Route>
                         <Route path='*' element={<h1>si lees esto es por los enanos que viven en el servidor estan de paro ERROR 404</h1>} ></Route>
 
 
@@ -42,7 +50,7 @@ function App() {
                     </Routes>
                 </div>
             </div>
-
+            </CartProvider>
         </BrowserRouter>
     )
     //path='/'  indica el total del home

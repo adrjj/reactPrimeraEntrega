@@ -5,7 +5,7 @@ const Productos =[
         codigo: "pin 22",
         color: "negro",
         categoria: "juegos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/yNJgGfB/pin22.png", 
         stock:"15"
@@ -18,7 +18,7 @@ const Productos =[
         codigo: "pin 12",
         color: "negro",
         categoria: "logos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/k8Z02FF/pin12.png",
         stock:"15"
@@ -30,7 +30,7 @@ const Productos =[
         codigo: "pin 11",
         color: "negro",
         categoria: "logos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/gMmpC2X/pin11.png",  // tube problemas para enrutar las imagenes la solucion fue crear una carpeta en el directorio
         stock:"15"                         //public/images
@@ -42,7 +42,7 @@ const Productos =[
         codigo: "pin 194",
         color: "negro",
         categoria: "logos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared, color fria",
         img:"https://i.ibb.co/0Grp9gg/Pin194.png",
         stock:"15"
@@ -54,7 +54,7 @@ const Productos =[
         codigo: "pin 259",
         color: "negro",
         categoria: "famosos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/4J7b1j2/Pin259.png",
         stock:"15"
@@ -66,7 +66,7 @@ const Productos =[
         codigo: "pin 262",
         color: "negro",
         categoria: "famosos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/0QHstb6/Pin262.png",
         stock:"15"
@@ -78,7 +78,7 @@ const Productos =[
         codigo: "pin 268",
         color: "negro",
         categoria: "famosos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/PZbwPWW/Pin268.png",
         stock:"15"
@@ -90,7 +90,7 @@ const Productos =[
         codigo: "pin 230",
         color: "negro",
         categoria: "juegos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/xFxFSMy/Pin230.png",
         stock:"15"
@@ -102,7 +102,7 @@ const Productos =[
         codigo: "pin 243",
         color: "negro",
         categoria: "juegos",
-        precio: "$5000",
+        precio: "5000",
         descripcion: "lampara de pared",
         img:"https://i.ibb.co/HXtXqwc/Pin243.png",
         stock:"15"

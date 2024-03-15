@@ -1,13 +1,28 @@
 
 import ItemContador from "./ItemContador";
+import { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "./CartContex";
+
 
 
 const ItemDetalle = ({ id, name, codigo, color, categoria, precio, descripcion, img, stock }) => {
-    console.log("Props en ItemDetalle:", { id, name, codigo, color, categoria, precio, descripcion, img, stock });
+    //console.log("Props en ItemDetalle:", { id, name, codigo, color, categoria, precio, descripcion, img, stock });
+    const [cantidadAdded, setCantidadAdded] = useState(0)
 
+    const {addItem}= useContext(CartContext)
+
+    const handleOnAdd = (cantidad) => {
+        setCantidadAdded(cantidad)
+        const item ={
+            id,name,precio,stock,img
+        }
+
+        addItem(item,cantidad)
+    }
     return (
         <article className="contCardDetealle">
-           
+
             <div className="contEncabezado">
                 <h2> {name}</h2>
                 <p> {codigo}</p>
@@ -22,8 +37,15 @@ const ItemDetalle = ({ id, name, codigo, color, categoria, precio, descripcion, 
 
             </div>
             <div className="contContador">
+                { cantidadAdded > 0 ? (
+                    <Link to="/Cart" className="botonUno" >Terminar Compra </Link>
+                ):(
+                    <ItemContador inicial={1} stock={stock} onAdd={handleOnAdd} > </ItemContador>
+                )
 
-                <ItemContador  inicial={1} stock={stock} onAdd={(cantidad) => console.log(`Añadir ${cantidad} al carrito`)} > </ItemContador>
+                }
+
+                
             </div>
         </article>
 

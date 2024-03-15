@@ -20,12 +20,12 @@ function CollapsibleExample({ marca, enlaceUno, enlaceDos, enlaceTres }) {
             <NavLink className="categoria" to={"/categoria/juegos"} >{enlaceDos}</NavLink>
             <NavLink className="categoria" to={"/categoria/logos"} >{enlaceTres}</NavLink>
           </Nav>
-          <Nav>
-            <Carrrito></Carrrito>
-          </Nav>
+          
         </Navbar.Collapse>
       </Container>
+      <Carrrito></Carrrito>
     </Navbar>
+   
   );
 }
 
