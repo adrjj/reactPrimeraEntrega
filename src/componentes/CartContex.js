@@ -11,14 +11,23 @@ export const CartProvider = ({ children }) => {
     //funcion para agregar producto al carrito.
     const addItem = (item, cantidad) => {
 
-        if (!isInCart(item.id)) {
+    /*     if (!isInCart(item.id)) {
+            const itemWithQuantity = { ...item, cantidad };
+            setCart(prev => [...prev, itemWithQuantity]);
+            return itemWithQuantity; // Devolver el producto con su cantida */
+//esto funcionaba bien ---------------
+         if (!isInCart(item.id)) {
             setCart(prev => [...prev, { ...item, cantidad }])
-        } else {
+ //----------------------------------------------------      
+       
+        } else { 
             console.error("el producto ya fue agregado")
         }
        // console.log("Cantidad añadida:", cantidad);
         //console.log("Item añadido:", item);
     }
+
+
 
     //Funcion para remover producto
 

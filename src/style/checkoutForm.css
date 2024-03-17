@@ -1,0 +1,15 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.contLabel{
+    display: flex;
+    gap: 2rem;
+}
+.inputFinal{
+    color: rgb(199, 28, 99);
+    border: 1px solid  rgb(199, 28, 99);
+
+}

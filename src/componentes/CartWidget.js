@@ -14,9 +14,9 @@ const Carrrito = () => {
     return (
 
         <div className="contCarrito">
-            <Link to="/cart">
+            <Link className="contA" to="/cart">
                 <img className="carritoSVG" src={carrito} alt="carritoCompras"></img>
-                <p className="contador">Cantidad {totalCantidad()}</p>
+                <p className="contador">{totalCantidad()}</p>
 
             </Link>
         </div>

@@ -23,3 +23,12 @@ color: rgb(74, 73, 82);
     text-decoration: none;
   
 }
+
+@media (max-width: 800px){
+
+    .bg-body-tertiary{
+        display: flex ;
+    justify-content: center;
+        
+    }
+}

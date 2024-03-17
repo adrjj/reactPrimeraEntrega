@@ -1,0 +1,24 @@
+.ContForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.contCheckFinalS{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.checkFinal{
+    color: rgb(199, 28, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.orden{ 
+padding: 0.5rem;
+border-radius: 0.5rem;
+    background-color: rgb(6, 158, 107);
+}

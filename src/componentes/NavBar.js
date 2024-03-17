@@ -10,7 +10,7 @@ import { NavLink ,Link } from 'react-router-dom';
 
 function CollapsibleExample({ marca, enlaceUno, enlaceDos, enlaceTres }) {
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary  contNav">
       <Container className='contTotalNav'>
         <NavLink className="marca" to={"/"} >{marca}</NavLink>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

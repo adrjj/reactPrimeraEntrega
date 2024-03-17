@@ -4,13 +4,29 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 0.5rem;
+margin-right: 2rem;
 
 }
 .carritoSVG{
 
-    width: 3rem;
+    width: 2.5rem;
 }
 .contador{
+
     font-weight: 800;
     color: tomato;
+    font-size: 0.8rem;
+    text-align: center;
+}
+.contA {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media (max-width: 800px){
+
+    .contA{
+        margin-top: 1rem;
+    }
 }

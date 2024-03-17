@@ -1,4 +1,4 @@
-
+import "../style/itemDetalle.css"
 import ItemContador from "./ItemContador";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
@@ -15,7 +15,7 @@ const ItemDetalle = ({ id, name, codigo, color, categoria, precio, descripcion, 
     const handleOnAdd = (cantidad) => {
         setCantidadAdded(cantidad)
         const item ={
-            id,name,precio,stock,img
+            id,name,precio,stock,img,cantidad
         }
 
         addItem(item,cantidad)
@@ -31,9 +31,9 @@ const ItemDetalle = ({ id, name, codigo, color, categoria, precio, descripcion, 
             <img className="cardImg" src={img} alt={name} />
 
             <div className="contDatos">
-                <h4>{categoria}</h4>
-                <p>{descripcion} {color}</p>
-                <h3> {precio}</h3>
+                <h4 className="categoria"> Categoria: {categoria}</h4>
+                <p className="descripcion">{descripcion} Color: {color}</p>
+                <h3 className="cardPrecioH3"> ${precio}</h3>
 
             </div>
             <div className="contContador">

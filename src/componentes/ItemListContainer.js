@@ -1,28 +1,45 @@
+
+
+import {getDocs, collection,query,where} from "firebase/firestore" 
+import {db} from "../config/Firebase"   
 import { useEffect, useState } from "react"
-import { getProducts, getProductsByCategory } from "../ArrayProductos"
+
 import {useParams} from "react-router-dom"
 import ItemList from "./ItemList"
 import "../style/itemListContainer.css"
-import ItemDetalle from "./ItemDetalle"
-import ItemContador from "./ItemContador"
+  
 
 
 
 
 const ItemListContainer = ({ saludo, descripcion }) => {
     const [productos, setProductos]= useState ([])
-    const {categoriaId} = useParams()
-
+    const [loading,setLoading]=useState(true)
+    const {categoryId} =useParams()
+    
     useEffect(()=>{
-        const asyncFunc= categoriaId ? getProductsByCategory : getProducts
-        asyncFunc( categoriaId)
-        .then(Respuesta=>{
-            setProductos(Respuesta)
+        setLoading(true)
+
+        console.log("categoryId:", categoryId); // Agrega este console.log
+        const collectionRef=categoryId
+        ? query(collection(db,"productos"),where("categoria","==",categoryId))
+        :collection(db,"productos")
+        
+        getDocs(collectionRef)
+        .then(response=>{
+         const productsAdapted =response.docs.map(doc=>{
+         const data = doc.data()
+         return {id:doc.id, ...data}   
+         })   
+        setProductos(productsAdapted)
         })
-        .catch(error =>{
-            console.error(error)
+        .catch(error =>{console.log (error)
         })
-    },[categoriaId])
+        .finally(()=>{
+            setLoading(false)
+        })
+
+    },[categoryId])
 
     return (
 
@@ -30,7 +47,11 @@ const ItemListContainer = ({ saludo, descripcion }) => {
 
             <h1>{saludo}</h1>
             <p>{descripcion}</p>
-            <ItemList productos={productos} ></ItemList>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                <ItemList productos={productos} />
+            )}
            
             
 
@@ -46,4 +67,7 @@ const ItemListContainer = ({ saludo, descripcion }) => {
 
 
 }
-export default ItemListContainer;
+export default ItemListContainer; 
+
+
+

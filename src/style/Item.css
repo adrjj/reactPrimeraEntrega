@@ -13,8 +13,15 @@ box-shadow: 1px 5px 5px rgb(83, 80, 80);
 
 
 }
-.contCard img{
+.contImg{
 
+    display: flex;
+    width: 250px;
+    height: auto;
+    justify-content: center;
+}
+.contCard img{
+ 
     width: 70%;
 }
 .contEncabezado{
@@ -31,6 +38,10 @@ box-shadow: 1px 5px 5px rgb(83, 80, 80);
 .cardDisponibleH3{
     font-size: 1rem;
     font-weight: 400;
+    color: rgb(199, 28, 99);
+}
+.stock{
+    font-weight: 700;
 }
 .cardImg{
     width: 50%;
@@ -76,10 +87,7 @@ color: aliceblue;
    justify-content: center;
 
 }
-.contContador{
-  
-   
-}
+
 .botonMenos ,.botonMas{
     display: flex;
     justify-content: center;

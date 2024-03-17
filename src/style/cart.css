@@ -1,0 +1,46 @@
+.contTotalCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contTotalDetalle{
+   display: flex;
+   gap: 1rem;
+}
+.contButonDetalle{
+display: flex;
+gap: 2rem;
+align-items: center;
+}
+.checkout{
+    background-color: rgb(6, 158, 107);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    color: aliceblue;
+    font-size: 1rem;
+    outline:none;
+    border: 0;
+}
+.botonBorrar{
+    background-color: rgb(202, 48, 48);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    color: aliceblue;
+    font-size: 1rem;
+    outline:none;
+    border: 0;
+}
+.contAvisoCarroVacio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.carritoTriste{
+    width: 40%;
+}
